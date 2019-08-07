@@ -7,6 +7,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  /* text-align: center; */
 }
 
 p {
@@ -36,11 +37,11 @@ h6 {
 }
 
 .page-section {
-  padding: 100px 0;
+  padding: 1% 0;
 }
 
 .page-section h2.section-heading {
-  font-size: 40px;
+  font-size: 6em;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -128,7 +129,7 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: red;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -144,7 +145,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 100%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -163,7 +164,8 @@ img::-moz-selection {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: #212529;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -704,13 +706,92 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   background-color: #fed136;
 }
 
-.chines-text {
+
+
+/* Things I've added */
+.chinese-text {
   font-family: 'shanghairegular';
+}
+
+#lunch {
+  color: white;
+  background-image: url("../img/food/FRTABLE\ copy.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#dinner {
+  color: white;
+  background-image: url("../img/food/thaichilichicken.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.chinese-heading {
+  color: red;
+  -webkit-text-stroke: .1px white;
+  font-size: 12vw;
+  margin-top: -5%;
+}
+
+#contact .chinese-heading {
+  font-size: 5rem;
 }
 
 .order-btn {
   color: white;
-  background-color: green;
+  background-color: red;
   border-color: white;
-  border-width: 3px;
+  border-width: 2.5px;
 }
+.order-btn:hover {
+  color: red;
+  background-color: white;
+  border-color: white;
+  border-width: 2.5px;
+}
+.card {
+  margin: 15% auto;
+  /* opacity: .8; */
+  background-color: gold;
+  font-size: 1.5em;
+}
+.card-text {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Should get most things thinner than an ipad */
+@media (max-width: 767px) { 
+  .order-btn {
+    margin: 70% auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .order-btn {
+    margin: 40% auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .order-btn {
+    margin: 30% auto;
+  }
+  .page-section h2.section-heading {
+    font-size: 10rem;
+  }
+}
+ /* Should get most things bigger than an ipad pro */
+@media (min-width: 1025px) {
+  .order-btn {
+    margin: 10% auto;
+  }
+}
+
+
