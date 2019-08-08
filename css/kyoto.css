@@ -400,7 +400,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .timeline {
-  position: relative;
+  position: absolute;
   padding: 0;
   list-style: none;
 }
@@ -497,6 +497,12 @@ header.masthead .intro-text .intro-heading {
   margin-bottom: 0;
 }
 
+.timeline-heading {
+  background-color: RGBA(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 5%;
+}
+
 .timeline .timeline-heading h4 {
   margin-top: 0;
   color: inherit;
@@ -509,6 +515,8 @@ header.masthead .intro-text .intro-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+  background-color: RGBA(255,255,255,0.9);
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
@@ -631,7 +639,7 @@ section#contact .form-group input.form-control {
 }
 
 section#contact .form-group textarea.form-control {
-  height: 248px;
+  height: auto;
 }
 
 section#contact .form-control:focus {
@@ -733,11 +741,23 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   height: 100vh;
 }
 
+#about {
+  color: white;
+  background-image: url("../img/food/dessert.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
 .chinese-heading {
   color: red;
   -webkit-text-stroke: .2px white;
   font-size: 12vw;
   margin-top: -5%;
+  background-color: RGBA(0,0,0,0.65);
+  border-radius: 25px;
 }
 
 #contact .chinese-heading {
@@ -759,7 +779,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .card {
   margin: 15% auto;
   /* opacity: .8; */
-  background-color: gold;
+  background-color: RGBA(255,0,0,0.65);
   font-size: 1.5em;
 }
 .card-text {
@@ -792,6 +812,22 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   .order-btn {
     margin: 10% auto;
   }
+}
+
+
+.page-section {
+  padding: 5%;
+}
+
+/* affect timeline pictue that isn't right */
+
+.timeline-image {
+  width: 150px; 
+    height: 100px;
+    background-image: url(http://i.stack.imgur.com/2OrtT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
 }
 
 
