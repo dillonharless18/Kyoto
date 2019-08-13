@@ -760,11 +760,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   border-radius: 25px;
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   .chinese-heading {
     -webkit-text-stroke: 5px white;
   }
-}
+} */
 
 #contact .chinese-heading {
   font-size: 5rem;
