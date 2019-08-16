@@ -41,13 +41,14 @@ h6 {
 }
 
 .page-section h2.section-heading {
-  font-size: 6em;
+  text-align: center;
+  /* font-size: 6em; */
   margin-top: 0;
   margin-bottom: 15px;
 }
 
 .page-section h3.section-subheading {
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 400;
   font-style: italic;
   margin-bottom: 75px;
@@ -137,7 +138,6 @@ img::-moz-selection {
   color: red;
   -webkit-text-stroke: .02rem white;
   font-family: 'shanghairegular';
-  /* font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -751,19 +751,19 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   height: 100vh;
 }
 
-.chinese-heading {
+/* .chinese-heading {
   color: red;
   -webkit-text-stroke: 1px white;
-  font-size: 12vw;
-  margin-top: -5%;
-  background-color: RGBA(0,0,0,0.65);
-  border-radius: 25px;
-}
+  /* font-size: 12vw; */
+  /* margin-top: -5%;
+  background-color: rgba(0,0,0,0.65);
+  border-radius: 25px; */
+/* } */ 
 
 
 
 #contact .chinese-heading {
-  font-size: 5rem;
+  /* font-size: 5rem; */
 }
 
 .order-btn {
@@ -778,15 +778,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   border-color: white;
   border-width: 2.5px;
 }
-.card {
-  margin: 15% auto;
-  /* opacity: .8; */
-  background-color: RGBA(255,0,0,0.65);
-  font-size: 1.5em;
-}
-.card-text {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
+
 
 /* Should get most things thinner than an ipad */
 @media (max-width: 767px) { 
@@ -806,7 +798,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     margin: 30% auto;
   }
   .page-section h2.section-heading {
-    font-size: 10rem;
+    /* font-size: 10rem; */
   }
 }
  /* Should get most things bigger than an ipad pro */
@@ -832,4 +824,106 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     background-position: 50% 50%; 
 }
 
+.grid {
+  display: grid;
+}
 
+.grid.page-section {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  justify-content: center;
+}
+
+.grid-heading-div {
+  grid-column: 2 / 12;
+  grid-row: 1 / 3;
+  background-color:
+  rgba(0,0,0,0.65);
+  border-radius: 25px;
+  display: flex;
+}
+
+.grid-heading-div > .chinese-heading {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;  
+  font-size: 10vmin;
+  margin: auto;
+}
+
+/* Trying to handle section text size */
+@media (max-width: 550px) {
+  .grid-heading-div > .chinese-heading {
+    font-size: 15vmin;
+  }
+}
+
+.grid > h3 {
+  background-color: rgba(255,0,0,0.65);
+  border: none;
+  color: white;
+  grid-column: 5 / 9;
+  grid-row: 4 / 6;
+  font-size: 2.5em;
+  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.grid > .lunch-menu-button-div {
+  grid-column: 3 / -3;
+  grid-row:  9/ 13;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.grid > div > .lunch-menu-button {
+  background-color: RGBA(255,0,0,0.65);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  /* padding: 3vmin; */
+  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.page-section > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.page-section > .veggie-bowl-div {
+  grid-column: 2 / 4;
+  grid-row: 1/3;
+  padding: 2vmin;
+}
+
+.page-section > .gai-satay-div {
+  grid-column: -4 / -2;
+  grid-row: 1/3;
+  padding: 2vmin;
+}
+
+.grid > .lunch-bowl-text-div {
+  grid-column: 1 / -1;
+  grid-row: 5;
+  background-color:rgba(0,0,0,0.65);
+  border-radius: 25px;
+  display: flex;
+}
+.lunch-bowl-text-div > .lunch-bowl-text {
+  margin: auto;
+}
+
+.grid > div > .lunch-menu-button:hover {
+  background-color: RGBA(255,0,0,0.9);
+  border: none;
+  color: white;
+}
+.chinese-heading {
+  color: red;
+  -webkit-text-stroke: 1px white;
+  /* font-size: 12vw; */
+  /* margin-top: -5%; */
+}
