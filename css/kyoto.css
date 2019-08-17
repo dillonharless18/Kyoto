@@ -877,7 +877,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 }
 
-.grid > div > .lunch-menu-button {
+.grid > div > form > .lunch-menu-button {
   background-color: RGBA(255,0,0,0.65);
   border: none;
   border-radius: 25px;
@@ -916,7 +916,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin: auto;
 }
 
-.grid > div > .lunch-menu-button:hover {
+.grid > div > form > .lunch-menu-button:hover {
   background-color: RGBA(255,0,0,0.9);
   border: none;
   color: white;
