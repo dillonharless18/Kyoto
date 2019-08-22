@@ -42,6 +42,12 @@
   align-self: center;
 }
 
+@media screen and (max-width: 240px) {
+  .image-view-button-div {
+    font-size: .7rem;
+  }
+}
+
 
 .grid > div > form > button {
   /* font-size: 2.5em; */

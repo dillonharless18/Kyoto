@@ -6,7 +6,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   /* text-align: center; */
 }
 
@@ -190,6 +190,8 @@ header.masthead {
   text-align: center;
   color: white;
   background-image: url("../img/food//salmonFilet.jpg");
+  background-color: rgba(238, 238, 238, 0.35) !important;
+  background-blend-mode: color;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -620,6 +622,8 @@ header.masthead .intro-text .intro-heading {
 section#contact {
   background-color: #212529;
   background-image: url("../img/map-image.png");
+  background-color: rgba(238, 238, 238, 0.35) !important;
+  background-blend-mode: color;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -724,29 +728,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   font-family: 'shanghairegular';
 }
 
-#lunch {
-  color: white;
-  background-image: url("../img/food/FRTABLE\ copy.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
-}
 
-#dinner {
-  color: white;
-  background-image: url("../img/food/thaichilichicken.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
-}
+
 
 #about {
   color: white;
   background-image: url("../img/food/dessert.jpg");
+  background-color: rgba(238, 238, 238, 0.35) !important;
+  background-blend-mode: color;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -839,7 +828,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .grid-heading-div {
   grid-column: 2 / 12;
-  grid-row: 1 / 3;
+  grid-row: 1 / 5;
   background-color:
   rgba(0,0,0,0.65);
   border-radius: 25px;
@@ -849,16 +838,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .grid-heading-div > .chinese-heading {
   grid-column: 1 / -1;
   grid-row: 1 / -1;  
-  font-size: 10vmin;
+  font-size: 8rem;
   margin: auto;
 }
 
-/* Trying to handle section text size */
-@media (max-width: 550px) {
-  .grid-heading-div > .chinese-heading {
-    font-size: 15vmin;
-  }
-}
+
 
 .grid.intro-grid {
   align-content: end;
@@ -867,38 +851,22 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   align-items: end;
 }
 
-.intro-grid > a {
-  grid-column: 3/5;
+/* Center order button */
+.intro-grid > div {
+  grid-column: 2/6;
 }
 
-.grid > h3 {
-  background-color: rgba(255,0,0,0.65);
-  border: none;
-  color: white;
-  grid-column: 5 / 9;
-  grid-row: 4 / 6;
-  font-size: 2.5em;
-  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
+/* Handle button text getting too big */
+/* @media screen and (max-width: 540px) {
+  .grid > .lunch-menu-button-div {
+    font-size: 9vw;
+  }
+  .grid > .dinner-menu-button-div {
+    font-size: 9vw;
+  }
+} */
 
-.grid > .lunch-menu-button-div {
-  grid-column: 3 / -3;
-  grid-row:  9/ 13;
-  font-size: 2.5em;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 
-}
-
-.grid > div > form > .lunch-menu-button {
-  background-color: RGBA(255,0,0,0.65);
-  border: none;
-  border-radius: 25px;
-  color: white;
-  /* padding: 3vmin; */
-  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
 
 .page-section > div > img {
     width: 100%;
@@ -919,27 +887,145 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding: 2vmin;
 }
 
-.grid > .lunch-bowl-text-div {
-  grid-column: 1 / -1;
-  grid-row: 5;
-  background-color:rgba(0,0,0,0.65);
-  border-radius: 25px;
-  display: flex;
-}
-.lunch-bowl-text-div > .lunch-bowl-text {
-  margin: auto;
-}
 
-.grid > div > form > .lunch-menu-button:hover {
-  background-color: RGBA(255,0,0,0.9);
-  border: none;
-  color: white;
-}
 .chinese-heading {
   color: red;
   -webkit-text-stroke: 1px white;
   /* font-size: 12vw; */
   /* margin-top: -5%; */
 }
+
+/* h3 under grid - don't think it's actually hitting anything */
+.grid > h3 {
+  background-color: rgba(255,0,0,0.65);
+  border: none;
+  color: white;
+  grid-column: 5 / 9;
+  grid-row: 4 / 6;
+  font-size: 2.5em;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Lunch Section */
+
+/* the whole section */
+#lunch { 
+  color: white;
+  background-image: url("../img/food/FRTABLE\ copy.jpg");
+  background-color: rgba(238, 238, 238, 0.35) !important;
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.grid > .lunch-menu-button-div {
+  grid-column: 3 / -3;
+  grid-row:  9/ 13;
+  font-size: 7vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+.grid > div > form > .lunch-menu-button {
+  background-color: RGBA(255,0,0,0.65);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  /* padding: 3vmin; */
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.grid > div > form > .lunch-menu-button:hover {
+  background-color: RGBA(255,0,0,0.9);
+  border: none;
+  color: white;
+}
+
+/* Trying to handle section text size */
+@media screen and (max-width: 550px) {
+  .grid-heading-div > .chinese-heading {
+    font-size: 25vw;
+  }
+}
+
+
+/* Dinner Section */
+
+#dinner {
+  color: white;
+  background-image: url("../img/food/thaichilichicken.jpg");
+  background-color: rgba(238, 238, 238, 0.35) !important;
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.grid > .dinner-menu-button-div {
+  grid-column: 3 / -3;
+  grid-row:  13/ -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.grid > div > form > .dinner-menu-button {
+  background-color: RGBA(255,0,0,0.65);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 6vw;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.grid > div > form > .dinner-menu-button:hover {
+  background-color: RGBA(255,0,0,0.9);
+  border: none;
+  color: white;
+}
+
+.grid > .dinner-special-text-div {
+  grid-row: 7;
+  grid-column: 1/-1;
+  justify-self: center;
+  text-align: center;
+}
+.grid > .dinner-special-text-div > h3 {
+  font-size: 5vw;
+}
+
+@media screen and (max-width: 550px) {
+  .grid > .dinner-special-text-div > h3 {
+    font-size: 8vw;
+  }
+  /* Since 'Dinner' is longer than Lunch', gotta handle it here */
+  .grid-heading-div > .chinese-heading.dinner-text {
+    font-size: 22vw;
+  }
+  .grid > div > form > .dinner-menu-button {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .grid > .dinner-special-text-div > h3 {
+    font-size: 3vw;
+  }
+  .grid-heading-div > .chinese-heading.dinner-text {
+    font-size: 6vw;
+  }
+  .grid > div > form > .dinner-menu-button {
+    font-size: 4vw;
+  }
+}
+
 
 
