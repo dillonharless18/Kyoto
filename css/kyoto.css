@@ -923,14 +923,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .grid > .lunch-menu-button-div {
   grid-column: 3 / -3;
-  grid-row:  9/ 13;
+  grid-row:  12/ -1;
   font-size: 7vw;
   display: flex;
   justify-content: center;
   align-content: center;
 }
-
-
 
 .grid > div > form > .lunch-menu-button {
   background-color: RGBA(255,0,0,0.65);
@@ -997,6 +995,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   grid-column: 1/-1;
   justify-self: center;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  padding: 5px 10px;
 }
 .grid > .dinner-special-text-div > h3 {
   font-size: 5vw;
