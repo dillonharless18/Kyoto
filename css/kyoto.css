@@ -140,7 +140,7 @@ img::-moz-selection {
   color: red;
   /* color: white; */
   -webkit-text-stroke: .02rem white;
-  -webkit-text-stroke: .02rem black;
+  /* -webkit-text-stroke: .02rem black; */
   font-family: 'shanghairegular';
 }
 
