@@ -959,6 +959,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   .grid-heading-div > .chinese-heading {
     font-size: 25vw;
   }
+  .grid > div > form > .lunch-menu-button {
+    font-size: 8vw;
+  }
 }
 
 /* Dinner Section */
