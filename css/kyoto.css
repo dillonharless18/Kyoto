@@ -137,8 +137,8 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  /* color: red; */
-  color: white;
+  color: red;
+  /* color: white; */
   -webkit-text-stroke: .02rem white;
   -webkit-text-stroke: .02rem black;
   font-family: 'shanghairegular';
