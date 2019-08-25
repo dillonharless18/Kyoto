@@ -193,8 +193,8 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  /* background-image: url("../img/food/catfish.PNG"); */
-  background-image: url("../img/food/catfish\ -\ Copy.jpg");
+  background-image: url("../img/food/catfish.PNG");
+  /* background-image: url("../img/food/catfish\ -\ Copy.jpg"); */
   /* background-color: rgba(238, 238, 238, 0.35) !important; */
   /* background-blend-mode: color; */
   background-repeat: no-repeat;
@@ -627,8 +627,8 @@ header.masthead .intro-text .intro-heading {
 section#contact {
   background-color: #212529;
   background-image: url("../img/map-image.png");
-  background-color: rgba(238, 238, 238, 0.35) !important;
-  background-blend-mode: color;
+  /* background-color: rgba(238, 238, 238, 0.35) !important; */
+  /* background-blend-mode: color; */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -739,8 +739,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #about {
   color: white;
   background-image: url("../img/food/dessert.jpg");
-  background-color: rgba(238, 238, 238, 0.35) !important;
-  background-blend-mode: color;
+  /* background-color: rgba(238, 238, 238, 0.35) !important; */
+  /* background-blend-mode: color; */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -923,8 +923,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #lunch { 
   color: white;
   background-image: url("../img/food/FRTABLE\ copy.jpg");
-  background-color: rgba(238, 238, 238, 0.35) !important;
-  background-blend-mode: color;
+  /* background-color: rgba(238, 238, 238, 0.35) !important; */
+  /* background-blend-mode: color; */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -969,8 +969,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #dinner {
   color: white;
-  background-image: url("../img/food/sakeandfood.jpg");
-  background-color: rgba(238, 238, 238, 0.35) !important;
+  /* background-image: url("../img/food/sakeandfood.jpg"); */
+  /* background-color: rgba(238, 238, 238, 0.35) !important; */
   background-blend-mode: color;
   background-repeat: no-repeat;
   background-attachment: scroll;
