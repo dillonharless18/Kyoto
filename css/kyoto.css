@@ -922,7 +922,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 /* the whole section */
 #lunch { 
   color: white;
-  background-image: url("../img/food/FRTABLE\ copy.jpg");
+  /* background-image: url("../img/food/FRTABLE\ copy.jpg"); */
+  background-image: url("../img/food/FRTABLE_Smaller.jpg");
   /* background-color: rgba(238, 238, 238, 0.35) !important; */
   /* background-blend-mode: color; */
   background-repeat: no-repeat;
@@ -1039,6 +1040,17 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   .grid > div > form > .dinner-menu-button {
     font-size: 4vw;
   }
+}
+
+/* Contact Section */
+.email-button {
+  background-color: rgba(255,0,0,0.65);
+  border: none;
+  color: white;
+  grid-column: 5 / 9;
+  grid-row: 4 / 6;
+  font-size: 2.5em;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 
