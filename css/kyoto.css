@@ -969,7 +969,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #dinner {
   color: white;
-  /* background-image: url("../img/food/sakeandfood.jpg"); */
+  background-image: url("../img/food/sakeandfood.jpg");
   /* background-color: rgba(238, 238, 238, 0.35) !important; */
   background-blend-mode: color;
   background-repeat: no-repeat;
