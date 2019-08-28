@@ -193,8 +193,8 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/food/catfish.PNG");
-  /* background-image: url("../img/food/catfish\ -\ Copy.jpg"); */
+  /* background-image: url("../img/food/catfish.PNG"); */
+  background-image: url("../img/food/catfish\ -\ Copy.jpg");
   /* background-color: rgba(238, 238, 238, 0.35) !important; */
   /* background-blend-mode: color; */
   background-repeat: no-repeat;
