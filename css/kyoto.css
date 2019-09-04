@@ -173,7 +173,7 @@ img::-moz-selection {
   margin: auto;
 }
 
-@media (max-width: 411px){
+@media (max-width: 550px){
   /* Make the nav section a grid on mobile to line the phone number up underneath name */
   .navbar > .container {
     display: grid;
