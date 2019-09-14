@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/LunchMenuImageGrid.css">
+    </head>
+    <body>
+        <div id="category-container" class="container">
+            <div id="thai" class="category-div" onclick="categoryClick(this)">Thai</div>
+                <!-- <div id="thai-pics-div" class="container"> -->
+                <div id="thai-pics-div" class="sub-grid">
+                    <div id="pic1-div" onclick="imgClick(this)"><img src="img/food/keemow.jpg"/></div>
+                    <div class=""><img src="img/food/rice.jpg"/></div>
+                    <div class=""><img src="img/food/sakeandfood.jpg"/></div>
+                    <div><img src="img/food/salmonFilet.jpg"/></div>
+                    <div><img src="img/building/inside.jpg"></div>
+                    <div class=""><img src="img/food/somesushi.jpg"/></div>
+                    <div><img src="img/food/FRTABLE_Smaller.jpg"/></div>
+                    <div class=""><img src="img/food/Thai basil.jpg"/></div>
+                    <div><img src="img/food/steakandshrimp.jpg"/></div>
+                    <div class=""><img src="img/food/summerRolls.PNG"/></div>
+                    <div><img src="img/food/bakedmussles.jpg"/></div>
+                    <div class=""><img src="img/food/dessert.jpg"/></div>
+                </div>
+
+            <div id="hiabchi" class="category-div" onclick="categoryClick(this)">Hibachi</div>
+            <div id="chinese" class="category-div" onclick="categoryClick(this)">Chinese</div>
+            <div id="sushi" class="category-div" onclick="categoryClick(this)">Sushi</div>
+            <div id="desserts" class="category-div" onclick="categoryClick(this)">Desserts</div>
+
+        </div>
+        
+
+        <script>
+            const log = document.querySelector('.event-log-contents');
+            const categoryDivs = document.querySelectorAll(".category-div");
+            console.log(categoryDivs)
+
+            // window.addEventListener('load', (event) => {
+            //     log.textContent = log.textContent + 'load\n';
+            // });
+
+            // document.addEventListener('readystatechange', (event) => {
+            //     log.textContent = log.textContent + `readystate: ${document.readyState}\n`;
+            // });
+
+            // document.addEventListener('DOMContentLoaded', (event) => {
+            //     log.textContent = log.textContent + `DOMContentLoaded\n`;
+            // });
+
+            // for (div in categoryDivs) {
+            //     div.addEventListener('click', () => {
+            //     log.textContent = '';
+            //     window.setTimeout(() => {
+            //         window.location.reload(true);
+            //     }, 200);
+            // });
+            // }
+
+            // Make the category div clickable and show the sub pics
+            function categoryClick(event) {
+                console.log(event)
+                console.log(event.id)
+                pictureDivId = event.id + "-pics-div"
+                console.log("pictureDivId: ", pictureDivId)
+                
+                // document.getElementById(pictureDivId).style.visibility = "visible"
+                document.getElementById(pictureDivId).style.display = "grid"
+
+                // Use some of the below to make a picture grow on click
+                // var element = document.getElementById("pic1-div");
+                // element.classList.add("span-all-columns");
+            }
+
+            // Make the image bigger and make the text appear
+            function imgClick(event) {
+                console.log("Image clicked: ", event)
+                event.classList.add("span-all-columns")
+                event.classList.add("span-two-rows")
+                
+
+                addText(event)
+                // event.innerHTML += '<p class="food-text">water<p>'
+                // document.getElementById(pictureDivId).style.display = "grid"
+
+                // Use some of the below to make a picture grow on click
+                // var element = document.getElementById("pic1-div");
+                // element.classList.add("span-all-columns");
+            }
+
+            function addText(event) {
+                event.innerHTML += '<p class="food-text">Pad Kee Mow</p>'
+            }
+        </script>
+    </body>
+</html>

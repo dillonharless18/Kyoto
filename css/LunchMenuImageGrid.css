@@ -1,0 +1,130 @@
+/* From basic.css */
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+ 
+.span-all-columns {
+  grid-column: 1 / -1;
+}
+
+/* Need to figure out how to make this bigger */
+.span-two-rows {
+    grid-row: span 2;
+}
+ 
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+html, body {
+    /* background-color: #ffeead; */
+    margin: 10px;
+}
+ 
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(5, 1fr);  /* somehow need to accomomdate for just the category divs*/
+    grid-auto-rows: 75px;
+}
+
+.sub-grid {
+    /* height: 100vh; */
+    /* height: auto; */
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(3, minmax(150px,200px));
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+}
+
+/* food image divs */
+.sub-grid > div {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+    background-color: grey;
+}
+ /* food images */
+.sub-grid > div > img {
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.sub-grid > div > img:hover {
+    opacity: .4;
+    /* grid-column: 1/-1; */
+}
+
+/*  For text when food pics are clicked */
+.food-text {
+
+    color: white;
+    background-color: none;
+    position: absolute;
+    top: 0;
+
+    /* color: white;
+    background-color: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+ 
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* For now set the food div to invisible */
+
+#thai-pics-div {
+    /* visibility: hidden; */
+    display: none;
+}
+
+/* The div with class container holding the categories */
+
+#category-container {
+    /* color: white; */
+    height: 90vh;
+    font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* All the categories' shared styles - Thai, Hiabchi, etc */
+
+.container > .category-div {
+    background-color: lightslategray;
+    color: white;
+    grid-column: 1 /-1;
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 550px) {
+    
+.container > .category-div {
+      font-size: 8vw;
+    }
+
+}
