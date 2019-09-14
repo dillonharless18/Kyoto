@@ -448,7 +448,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #contact .chinese-heading {
   /* font-size: 5rem; */
 }
-
+.order-btn-div {
+  grid-row: 3;
+  align-self: center;
+  /* justify-self: start; */
+}
 .order-btn {
   /* color: white; */
   color: black;
@@ -472,13 +476,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 /* Should get most things thinner than an ipad */
 @media (max-width: 767px) { 
   .order-btn {
-    margin: 70% auto;
+    /* margin: 70% auto; */
   }
 }
 
 @media (min-width: 768px) {
   .order-btn {
-    margin: 40% auto;
+    /* margin: 40% auto; */
   }
 }
 
@@ -544,8 +548,15 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .grid.intro-grid {
   align-content: end;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   align-items: end;
+}
+
+.intro-grid > div.blurb {
+  grid-row: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* Center order button */
